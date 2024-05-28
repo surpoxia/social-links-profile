@@ -1,0 +1,90 @@
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark_Grey: hsl(0, 0%, 12%);
+    --Off_Black: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Off_Black);
+}
+
+.card {
+    width: 383px;
+    height: 611px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    text-align: center;
+    background-color: var(--Dark_Grey);
+    border-radius: 16px;
+    .avatar {
+        & img {
+            width: 50%;
+            border-radius: 50%;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+    .text {
+        .name {
+            color: var(--White);
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .location {
+            color: var(--Green);
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+        .info {
+            color: var(--White);
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+    }
+    .links {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: top;
+        text-align: center;
+        width: 80%;
+        height: 100%;
+        margin-bottom: 1.5rem;
+        & a {
+            width: 100%;
+            height: 30%;
+            margin-bottom: 1rem;
+            background-color: var(--Grey);
+            border-style: none;
+            border-radius: 12px;
+            color: var(--White);
+            font-size: 14px;
+            font-weight: 600;
+            align-content: center;
+            text-decoration: none;
+            &:hover {
+                background-color: var(--Green);
+                color: var(--Dark_Grey);
+            }
+        }
+    }
+}
+
